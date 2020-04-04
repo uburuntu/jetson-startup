@@ -2,9 +2,11 @@
 
 Easy to run scripts and docs compilation.
 
-Jetson Nano: developer.nvidia.com/embedded/jetson-nano-developer-kit
+Jetson Nano:
+- https://developer.nvidia.com/embedded/jetson-nano-developer-kit
 
-Forum with latest news: forums.developer.nvidia.com/c/agx-autonomous-machines/jetson-embedded-systems/jetson-nano/76
+Forum with latest news: 
+- https://forums.developer.nvidia.com/c/agx-autonomous-machines/jetson-embedded-systems/jetson-nano/76
 
 {toc}
 
@@ -19,6 +21,21 @@ Forum with latest news: forums.developer.nvidia.com/c/agx-autonomous-machines/je
 - [Setup and First Boot](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#setup)
 - [Next Steps](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#next)
 - [Troubleshooting](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#troubleshooting)
+
+## 🐍🕯 PyTorch
+
+Topic:
+- https://forums.developer.nvidia.com/t/pytorch-for-jetson-nano-version-1-4-0-now-available/72048
+
+`pytorch.sh` (specify versions at first lines):
+```bash
+{pytorch}
+```
+
+## 🕯🔄❇️ PyTorch to TensorRT converter
+
+Tool for converting PyTorch models to TensorRT:
+- https://github.com/NVIDIA-AI-IOT/torch2trt
 
 ## 🎞 FFmpeg with hardware-accelerated encoding and decoding
 

@@ -1,5 +1,5 @@
-from pathlib import Path
 import string
+from pathlib import Path
 
 
 def md_head_link(h: str) -> str:
