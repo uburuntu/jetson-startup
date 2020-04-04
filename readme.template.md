@@ -22,7 +22,7 @@ Forum with latest news:
 - [Next Steps](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#next)
 - [Troubleshooting](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#troubleshooting)
 
-## 🐍🕯 PyTorch
+## 🕯 PyTorch
 
 Topic:
 - https://forums.developer.nvidia.com/t/pytorch-for-jetson-nano-version-1-4-0-now-available/72048
@@ -32,10 +32,15 @@ Topic:
 {pytorch}
 ```
 
-## 🕯🔄❇️ PyTorch to TensorRT converter
+## ❇️ PyTorch to TensorRT converter
 
 Tool for converting PyTorch models to TensorRT:
 - https://github.com/NVIDIA-AI-IOT/torch2trt
+
+`torch2trt.sh`:
+```bash
+{torch2trt}
+```
 
 ## 🎞 FFmpeg with hardware-accelerated encoding and decoding
 

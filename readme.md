@@ -11,8 +11,8 @@ Forum with latest news:
 ## Table of Contents
 
 - [⚙️ Complete official Getting Started](#-complete-official-getting-started)
-- [🐍🕯 PyTorch](#-pytorch)
-- [🕯🔄❇️ PyTorch to TensorRT converter](#-pytorch-to-tensorrt-converter)
+- [🕯 PyTorch](#-pytorch)
+- [❇️ PyTorch to TensorRT converter](#-pytorch-to-tensorrt-converter)
 - [🎞 FFmpeg with hardware-accelerated encoding and decoding](#-ffmpeg-with-hardware-accelerated-encoding-and-decoding)
 - [🗂 Other tutorials](#-other-tutorials)
 
@@ -29,7 +29,7 @@ Forum with latest news:
 - [Next Steps](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#next)
 - [Troubleshooting](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#troubleshooting)
 
-## 🐍🕯 PyTorch
+## 🕯 PyTorch
 
 Topic:
 - https://forums.developer.nvidia.com/t/pytorch-for-jetson-nano-version-1-4-0-now-available/72048
@@ -120,10 +120,26 @@ install_torchvision
 
 ```
 
-## 🕯🔄❇️ PyTorch to TensorRT converter
+## ❇️ PyTorch to TensorRT converter
 
 Tool for converting PyTorch models to TensorRT:
 - https://github.com/NVIDIA-AI-IOT/torch2trt
+
+`torch2trt.sh`:
+```bash
+#!/usr/bin/env bash
+set -e
+
+# Set your python executable
+PYTHON="python3.6"
+
+cd /tmp
+
+git clone https://github.com/NVIDIA-AI-IOT/torch2trt
+cd torch2trt
+sudo ${PYTHON} setup.py install
+
+```
 
 ## 🎞 FFmpeg with hardware-accelerated encoding and decoding
 
