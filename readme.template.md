@@ -61,4 +61,9 @@ Usage examples:
 
 ## 🗂 Other tutorials
 
-- https://www.pyimagesearch.com/2019/05/06/getting-started-with-the-nvidia-jetson-nano
+- https://elinux.org/Jetson_Zoo
+  - TensorFlow with Keras
+  - MXNet
+  - ROS
+  - NVIDIA Isaac SDK
+  - ... and others
