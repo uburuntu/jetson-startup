@@ -12,7 +12,7 @@ Forum with latest news:
 
 - [⚙️ Complete official Getting Started](#-complete-official-getting-started)
 - [🕯 PyTorch](#-pytorch)
-- [❇️PyTorch to TensorRT converter](#pytorch-to-tensorrt-converter)
+- [❇️ PyTorch to TensorRT converter](#-pytorch-to-tensorrt-converter)
 - [🎞 FFmpeg with hardware-accelerated encoding and decoding](#-ffmpeg-with-hardware-accelerated-encoding-and-decoding)
 - [🗂 Other tutorials](#-other-tutorials)
 
@@ -120,7 +120,7 @@ install_torchvision
 
 ```
 
-## ❇️PyTorch to TensorRT converter
+## ❇️ PyTorch to TensorRT converter
 
 Tool for converting PyTorch models to TensorRT:
 - https://github.com/NVIDIA-AI-IOT/torch2trt
