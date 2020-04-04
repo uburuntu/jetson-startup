@@ -32,7 +32,7 @@ Topic:
 {pytorch}
 ```
 
-## ❇️ PyTorch to TensorRT converter
+## ❇️PyTorch to TensorRT converter
 
 Tool for converting PyTorch models to TensorRT:
 - https://github.com/NVIDIA-AI-IOT/torch2trt
