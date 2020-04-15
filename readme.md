@@ -11,9 +11,12 @@ Forum with latest news:
 ## Table of Contents
 
 - [⚙️ Complete official Getting Started](#-complete-official-getting-started)
+- [🐍 Useful system packages](#-useful-system-packages)
 - [🕯 PyTorch](#-pytorch)
 - [❇️ PyTorch to TensorRT converter](#-pytorch-to-tensorrt-converter)
 - [🎞 FFmpeg with hardware-accelerated encoding and decoding](#-ffmpeg-with-hardware-accelerated-encoding-and-decoding)
+- [🔑 SSH Configuration](#-ssh-configuration)
+- [🔮 Disable GUI on boot](#-disable-gui-on-boot)
 - [🗂 Other tutorials](#-other-tutorials)
 
 
@@ -28,6 +31,18 @@ Forum with latest news:
 - [Setup and First Boot](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#setup)
 - [Next Steps](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#next)
 - [Troubleshooting](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#troubleshooting)
+
+## 🐍 Useful system packages
+
+```bash
+sudo apt-get update
+sudo apt-get install -y mc git curl htop libcurl4-openssl-dev libssl-dev python3.6-dev python3-pip
+sudo apt-get upgrade
+
+# Docker Compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+```
 
 ## 🕯 PyTorch
 
@@ -178,6 +193,22 @@ sudo make install
 Usage examples:
 - `ffmpeg -c:v h264_nvmpi -i input_file -f null -`
 - `ffmpeg -i input_file -c:v h264_nvmpi <output.mp4>`
+
+## 🔑 SSH Configuration
+
+`/etc/ssh/sshd_config`:
+```bash
+PasswordAuthentication no
+PubkeyAuthentication yes
+```
+
+## 🔮 Disable GUI on boot
+
+Good choice for `ssh` usage. It saves an average 1 GB of RAM (of 4).
+```bash
+sudo systemctl set-default multi-user.target
+```
+and reboot. [Source](https://askubuntu.com/questions/1056363/how-to-disable-gui-on-boot-in-18-04-bionic-beaver).
 
 ---
 
